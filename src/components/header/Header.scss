@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #282c34;
+    min-height: 60px;
+    align-items: center;
+    color: white;
+    
+    .header-text {
+        flex: 4;
+        padding-left: calc( 36vw / 2 );
+    }
+    
+    .header-nav-btns {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
+        padding: 0;
+        .nav-btn {
+            cursor: pointer;
+        }
+    }
+}

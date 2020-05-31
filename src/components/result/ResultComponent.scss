@@ -1,0 +1,50 @@
+@mixin box-with-shadow($color, $shadow-color) {
+    box-shadow: 1px 2px 2px $shadow-color;
+    padding: 15px;
+    width: 50%;
+    background: $color;
+    color: #ffffff;
+    font-size: medium;
+}
+
+@mixin center-align() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.not-found {
+    @include box-with-shadow( indianred, darkred );
+    @include center-align();
+}
+
+.found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include center-align();
+    p{
+        @include box-with-shadow( seagreen, darkgreen );
+        width: 100%;
+    }
+    .found-data {
+        font-size: larger;
+    }
+    .found-time {
+        padding: 8px;
+    }
+}
+
+.go-to-home-btn {
+    background-color: #282c34;
+    color: #fff;
+    border: 1px solid #262626;
+    padding: 10px 30px;
+    box-shadow: 1px 2px 2px #262626;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20%;
+    left: 45%;
+}
