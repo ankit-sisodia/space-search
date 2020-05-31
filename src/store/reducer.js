@@ -13,13 +13,7 @@ import {
 const initialState = {
     searches: 4,
     token: '',
-    planets: [{
-        value: 'Select planet',
-        label: 'Select planet',
-        id: 'select',
-        selected: true,
-        disabled: true
-    }],
+    planets: [],
     vehicles: [],
     selectedPlanet: {},
     selectedVehicle: {},

@@ -31,4 +31,30 @@
     box-shadow: 1px 1px 1px #ddd;
     background-color: #eee;
     height: 30px;
+    width: 15%;
+}
+
+@media( max-width: 780px ) {
+    .search-wrapper {
+        display: grid;
+    }
+    .time-section {
+        width: auto;
+    }
+}
+
+@media( max-width: 360px ) {
+    .content-wrapper {
+        overflow-y: auto;
+    }
+    .search-time-container {
+        display: grid;
+    }
+    .time-section {
+        width: auto;
+    }
+    .find-btn {
+        position: static;
+        margin: 10px;
+    }
 }
