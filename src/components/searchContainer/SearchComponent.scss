@@ -37,34 +37,19 @@
 .search-time-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .time-section {
     border: 1px solid #ccc;
-    padding: 15px 40px;
-    box-shadow: 1px 1px 1px #ddd;
+    padding: 0;
     background-color: #eee;
-    height: 30px;
+    height: 48px;
     width: 15%;
-    margin-top: 10px;
+    align-items: center;
+    display: grid;
+    padding-bottom: 5px;
 }
-
-// @media( max-width: 780px ) {
-//     .module-wrapper {
-//         margin-bottom: 20px;
-//         margin-right: 0;
-//         &:last-child {
-//             margin-bottom: 0;
-//         }
-//     }
-
-//     .search-wrapper {
-//         display: grid;
-//     }
-//     .time-section {
-//         width: auto;
-//     }
-// }
 
 @media( max-width: 780px ) {
     .module-wrapper {
