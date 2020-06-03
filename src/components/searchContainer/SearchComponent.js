@@ -26,7 +26,7 @@ const searchComponent = props => {
         let compArr = [];
 
         while(count < searches) {
-            compArr.push(<div key={count}>
+            compArr.push(<div key={count} className="module-wrapper">
                 <SelectComponent 
                     selectionId={count} 
                     planets={planets} 
